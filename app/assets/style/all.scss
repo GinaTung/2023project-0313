@@ -1,7 +1,10 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+// 建立BS5-新增寬及高比例
+@import "./utilities/utilities";
+@import './base/_base.scss';
+@import "./base/_fontStyle";
 
-@import './base/base.scss';
-@import "./base/fontStyle";
-@import './layout/index.scss'
+@import "./layout/_layout.scss";
+@import "./pages/_index.scss";

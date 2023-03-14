@@ -7,10 +7,15 @@ body {
       background: $black;
       font-weight: bold;
       color: $white;
+      font-size: 18px;
+      line-height: 27px;
   }
 a{
     text-decoration: none;
 }
 img{
     object-fit: cover;
+}
+.container{
+    max-width: 1680px;
 }
