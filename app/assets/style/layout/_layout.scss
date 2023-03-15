@@ -1,13 +1,50 @@
-.pl-1{
+@mixin pad{
+    @media(max-width:992px){
+    @content;
+    }
+}
+@mixin pad2{
+    @media(min-width:992px){
+    @content;
+    }
+}
+@mixin mobile{
+    @media(max-width:376px){
+    @content;
+    }
+}
+.logo-desktop{
+    @include pad{
+        display: none !important;
+    }
+}
+.logo-mobile{
+    @include pad2{
+        display: none !important;
+    }
+}
+.navbar-pl-1{
     padding-left: 104px !important;
+    @include pad{
+        padding-left: 0 !important;
+    }
 }
 .icon-p-1{
     padding: 10px;
 }
 .icon-ml-1{
-    margin-left: 130px;
+    margin-left: 120px;
 }
 .nav-link:hover{
+    color: #FF5C00 !important;
+
+}
+.navbar-icon{
+    @include pad{
+        display: none !important;
+    }
+}
+.icon-hover:hover{
     color: #FF5C00 !important;
 
 }
