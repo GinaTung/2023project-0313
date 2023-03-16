@@ -254,10 +254,13 @@ $spacers: (
   1: $spacer * .25,//4px
   2: $spacer * .5,//8px
   3: $spacer,//16px
-  4: $spacer * 1.25,//24px
-  5: $spacer * 1.5,//28px
-  6: $spacer * 1.75,//32px
-  7: $spacer * 2,//36px
+  4: $spacer * 1.25,//20px
+  5: $spacer * 1.5,//24px
+  6: $spacer * 1.75,//28px
+  7: $spacer * 2,//32px
+  8: $spacer * 2.25,//36px
+  9: $spacer * 2.5,//40px
+  10: $spacer * 3,//48px
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -447,9 +450,9 @@ $line-height-lg:              2 !default;
 $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h4-font-size:                $font-size-base * 1.5 !default;//24px
+$h5-font-size:                $font-size-base * 1.25 !default;//20px
+$h6-font-size:                $font-size-base !default;//16px
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
