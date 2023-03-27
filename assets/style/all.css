@@ -13525,6 +13525,12 @@ img {
   margin: 0 180px 80px 180px;
 }
 
+@media (max-width: 992px) {
+  .location {
+    margin: 0;
+  }
+}
+
 .nav-tabs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13556,19 +13562,41 @@ img {
           justify-content: space-between;
 }
 
-.location-data .location-img {
+.location-data .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  color: #FF5C00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location-data .swiper-slide .location-img {
   position: relative;
   width: 636px;
 }
 
-.location-data .location-img .img-title {
+@media (max-width: 992px) {
+  .location-data .swiper-slide .location-img {
+    width: 100%;
+  }
+}
+
+.location-data .swiper-slide .location-img .img-title {
   text-align: left;
   bottom: 0;
   left: 0;
   position: absolute;
 }
 
-.location-data .location-img .location-btn {
+.location-data .swiper-slide .location-img .location-btn {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -13577,6 +13605,12 @@ img {
 
 .story {
   margin: 0 180px 80px 180px;
+}
+
+@media (max-width: 992px) {
+  .story {
+    margin: 0;
+  }
 }
 
 .story .story-data {
@@ -13588,8 +13622,35 @@ img {
           justify-content: space-between;
 }
 
+@media (max-width: 376px) {
+  .story .story-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .story .story-data .story-img {
   position: relative;
+}
+
+@media (max-width: 992px) {
+  .story .story-data .story-img {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .story .story-data .story-img img {
+    width: 100%;
+  }
 }
 
 .story .story-data .story-img .mask:hover::before {
@@ -13614,6 +13675,16 @@ img {
   left: 25%;
   text-align: center;
   z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .story .story-data .story-img .story-title {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
