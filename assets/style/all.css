@@ -13478,6 +13478,7 @@ img {
 @media (max-width: 992px) {
   .banner .banner-title {
     text-align: center;
+    padding-bottom: 80px;
   }
 }
 
@@ -13514,6 +13515,13 @@ img {
           align-items: center;
 }
 
+@media (max-width: 992px) {
+  .secondary-title {
+    margin-bottom: 40px;
+    margin-top: 80px;
+  }
+}
+
 .secondary-title .line {
   width: 120px;
   height: 5px;
@@ -13540,6 +13548,12 @@ img {
           justify-content: space-between;
   margin-bottom: 80px;
   border-bottom: 0px;
+}
+
+@media (max-width: 992px) {
+  .nav-tabs .nav-item {
+    width: 10%;
+  }
 }
 
 .nav-tabs .nav-link {
@@ -13642,7 +13656,7 @@ img {
 
 @media (max-width: 992px) {
   .story .story-data .story-img {
-    margin-bottom: 15px;
+    margin-bottom: 60px;
     text-align: center;
   }
 }
@@ -13684,6 +13698,17 @@ img {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+  }
+}
+
+.lighthouseStore {
+  margin: 0 180px 80px 180px;
+}
+
+@media (max-width: 992px) {
+  .lighthouseStore {
+    margin: 0;
+    padding-bottom: 40px;
   }
 }
 
