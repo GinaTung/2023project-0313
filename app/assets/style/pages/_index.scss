@@ -3,6 +3,16 @@
   font-size: 20px;
   font-weight: 400;
 }
+@mixin deskep-xxl{
+  @media(max-width:1400px){
+  @content;
+  }
+}
+@mixin deskep-xl{
+  @media(max-width:1140px){
+  @content;
+  }
+}
 @mixin pad{
   @media(max-width:992px){
   @content;
@@ -140,19 +150,30 @@
   .story-data{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  @include deskep-xxl{
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  @include deskep-xl{
+    justify-content: center;
+  }
   @include mobile{
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
   }
     .story-img{
       position: relative;
-      @include pad{
+      @include deskep-xl{
         margin-bottom: 60px;
         text-align: center;
       }
+      
       img{
-        @include pad{
+        @include deskep-xl{
+          width: auto;
+        }
+        @include mobile{
           width: 100%;
         }
       }
@@ -195,7 +216,6 @@
   @include pad{
     margin: 0;
     padding-bottom: 40px;
-
   }
 }
 
