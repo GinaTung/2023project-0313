@@ -13385,6 +13385,8 @@ img {
 
 .container {
   max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 12px;
 }
 
 @media (max-width: 992px) {
@@ -13634,8 +13636,8 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 @media (max-width: 1400px) {
@@ -13644,6 +13646,8 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -13669,6 +13673,7 @@ img {
 
 .story .story-data .story-img {
   position: relative;
+  max-width: 416px;
 }
 
 @media (max-width: 1140px) {
