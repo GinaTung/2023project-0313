@@ -150,10 +150,11 @@
   .story-data{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   @include deskep-xxl{
     justify-content: center;
     margin-bottom: 10px;
+      flex-wrap: wrap;
   }
   @include deskep-xl{
     justify-content: center;
@@ -164,6 +165,7 @@
   }
     .story-img{
       position: relative;
+      max-width: 416px;
       @include deskep-xl{
         margin-bottom: 60px;
         text-align: center;
